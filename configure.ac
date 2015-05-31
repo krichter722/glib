@@ -51,6 +51,7 @@ m4_define([glib_lt_current_minus_age],
 # we only want minimal debugging support.
 m4_define([glib_debug_default],
           [m4_if(m4_eval(glib_minor_version % 2), [1], [yes], [minimum])])dnl
+m4_pattern_allow([AC_DEFINE])
 
 
 AC_INIT(glib, [glib_version],
